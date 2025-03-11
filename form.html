@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Document</title>
+
+</head>
+
+<body>
+
+
+<form>
+
+<form actions="">
+
+
+Name<input type="name" name="personName" id="namedata">
+
+Age <input type="number" name="personAge" id="agedata">
+
+Native city<input type="text" name="personCity" id="citydata">
+
+<button type="button">Click Me!</button>
+
+
+</form>
+
+
+
+<script>
+
+const form=document.queryselector('form');
+
+const personName=document.getElementryById('name')
+
+const personAge=document.getElementById('age')
+
+const personNative=document.getElementById('city')
+
+function getDefault();
+
+event.preventDefault();
+
+const personData={
+
+name:personName.value,
+
+age:personAge.value,
+
+city:personNative.value
+
+}
+
+console.log(personData);
